@@ -57,11 +57,11 @@ import os
 import csv
 with open("summary.txt", "a") as f:
     print(f"Total months: ", budget_df["Date"].count(), file = f)
-    print(f"---------------------------------------------------------------", file = f)
+    print(f"--------------------------------", file = f)
     print(f"Total: $",budget_df["Profit/Losses"].sum(), file = f)
-    print(f"---------------------------------------------------------------", file = f)
+    print(f"---------------------------------", file = f)
     print(f"Average change: $", row_change.mean(), file = f)
-    print(f"---------------------------------------------------------------", file = f)
+    print(f"---------------------------------", file = f)
     print("Max increase:",result1, " ($",max_value,")", file = f)
     print("Max decrease:", result2, " ($",min_value,")", file = f)
 f.close()
